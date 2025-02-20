@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox stylesheets="@../css/green-theme.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.filecontroller.FileController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="5.0" top="20.0" />
+    </padding>
+   <children>
+      <Button mnemonicParsing="false" onAction="#importDataStore" text="Import/Load" />
+      <Button mnemonicParsing="false" onAction="#exportDataStore" text="Export">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

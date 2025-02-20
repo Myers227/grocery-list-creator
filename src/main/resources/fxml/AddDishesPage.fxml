@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<VBox xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.dishes.AddDishesController">
+   <children>
+      <HBox spacing="20.0" VBox.vgrow="ALWAYS">
+         <children>
+               <VBox>
+                   <Label text="Dishes:">
+                  <font>
+                     <Font size="16.0" />
+                  </font></Label>
+                   <ListView fx:id="dishListView" minWidth="-Infinity" prefHeight="839.0" prefWidth="174.0" VBox.vgrow="ALWAYS" />
+                   <Button onAction="#handleRemoveSelectedDish" text="Remove Selected Dish" />
+               </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+              <VBox minWidth="-Infinity" prefHeight="908.0" prefWidth="134.0" spacing="10.0">
+                  <children>
+                  <Label text="Information:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                      <TextField fx:id="dishNameInput" promptText="Dish Name" />
+                  <TextField fx:id="dishNumberOfMeals" promptText="Number of Meals" />
+                      <Button onAction="#handleImageUpload" text="Upload Image" />
+                      <!-- Image Upload Section -->
+                      <ImageView fx:id="dishImageView" fitHeight="200" fitWidth="200" preserveRatio="true" />
+
+                      <AnchorPane prefHeight="306.0" prefWidth="201.0" VBox.vgrow="ALWAYS" />
+                  </children>
+              </VBox>
+            <AnchorPane HBox.hgrow="ALWAYS" />
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Recipe:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HTMLEditor fx:id="instructionsEditor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+               <!-- Added Ingredients Section -->
+               <VBox>
+                   <Label text="Added Ingredients:">
+                  <font>
+                     <Font size="16.0" />
+                  </font></Label>
+                   <ListView fx:id="addedIngredientsListView" minWidth="-Infinity" prefHeight="839.0" prefWidth="160.0" VBox.vgrow="ALWAYS" />
+                   <Button onAction="#handleSelectAllAdded" text="Select All" />
+                   <Button onAction="#handleRemoveSelected" text="Remove Selected" />
+               </VBox>
+               <!-- Ingredients Section with Accordion -->
+               <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <children>
+                  <ScrollPane fitToWidth="true" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="222.0" style="-fx-background-color: transparent; -fx-background: transparent; -fx-background-radius: 15;" VBox.vgrow="ALWAYS">
+                     <content>
+                            <Accordion fx:id="categoryAccordion">
+                    <!-- TitledPanes will be dynamically added here -->
+                </Accordion>
+                     </content>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ScrollPane>
+                  <HBox alignment="BOTTOM_RIGHT">
+                     <children>
+                            <Button fx:id="addDishButton" onAction="#handleAddDish" prefHeight="26.0" prefWidth="121.0" style="-fx-background-color: transparent;" text="Add Dish" textAlignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/plusIcon3.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               </VBox>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="5.0" top="20.0" />
+   </padding>
+</VBox>
