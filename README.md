@@ -1,2 +1,4 @@
-# grocery-list-creator
-Use a GUI to create Dishes and lists to make grocery shopping easier!
+# Overview
+This application was made to help budgeting and make grocery lists easier to make for myself. It uses JavaFX for the GUI 
+
+## 
