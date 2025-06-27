@@ -1,5 +1,5 @@
 # Overview
-This application was made to help budgeting and make grocery lists easier to make for myself. It uses JavaFX for the GUI 
+This application was made to help budgeting and make grocery lists easier to make for myself. The application tells the total price of the grocery list and organizes the list by catagory so it's quicker to shop in the store. It uses JavaFX for the GUI. Fxml for the layout. 
 
 ## How to use
 ### Add ingredients
