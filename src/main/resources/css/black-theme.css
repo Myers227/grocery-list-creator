@@ -1,0 +1,164 @@
+.root{
+-fx-background-color:#EAEEF4;
+}
+
+.right_pane{
+    -fx-background-color:#EAEEF4;
+}
+
+.label {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: black;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+
+.side_ankerpane{
+-fx-background-color:#1d522a;
+-fx-border-width: 2px 2px 2px 2px;
+-fx-border-radius: 20px;
+-fx-background-radius: 20px;
+-fx-border-style: solid;
+}
+.inner_pane{
+-fx-background-color:#748CF1;
+-fx-border-width: 2px 2px 2px 2px;
+-fx-border-radius: 20px;
+-fx-background-radius: 20px;
+-fx-border-style: solid;
+-fx-border-color: #748CF1;
+
+}
+.most_inner_pane{
+-fx-background-color:#6780E2;
+-fx-border-width: 2px 2px 2px 2px;
+-fx-border-radius: 20px;
+-fx-background-radius: 20px;
+-fx-border-style: solid;
+-fx-border-color: #748CF1;
+}
+
+#btn_workbench{
+-fx-background-color:#141313;
+-fx-border-width: 2px 2px 2px 2px;
+-fx-border-radius: 50px;
+-fx-background-radius: 50px;
+-fx-border-style: solid;
+-fx-border-color: #141313;
+}
+
+.btn_workbench11{
+-fx-background-color:#353A56;
+-fx-border-width: 2px 2px 2px 2px;
+-fx-border-radius: 50px;
+-fx-background-radius: 50px;
+-fx-border-style: solid;
+-fx-border-color: #353A56;
+}
+.pane_1{
+-fx-background-color:#748CF1;
+-fx-border-width: 2px 2px 2px 2px;
+-fx-border-radius: 20px;
+-fx-background-radius: 20px;
+-fx-border-style: solid;
+-fx-border-color: #748CF1;
+}
+.progress{
+-fx-background-color:#ffffff;
+-fx-border-width: 2px 2px 2px 2px;
+-fx-border-radius: 16px;
+-fx-background-radius: 16px;
+-fx-border-style: solid;
+-fx-border-color: #ffffff;
+}
+.pane_11{
+-fx-background-color:#ffffff;
+-fx-border-width: 2px 2px 2px 2px;
+-fx-border-radius: 16px;
+-fx-background-radius: 16px;
+-fx-border-style: solid;
+-fx-border-color: #ffffff;
+}
+.pane_111{
+-fx-background-color:#FD9999;
+-fx-border-width: 2px 2px 2px 2px;
+-fx-border-radius: 16px;
+-fx-background-radius: 16px;
+-fx-border-style: solid;
+-fx-border-color: #FD9999;
+
+}
+.pane_1111{
+-fx-background-color:#353A56;
+-fx-border-width: 2px 2px 2px 2px;
+-fx-border-radius: 16px;
+-fx-background-radius: 16px;
+-fx-border-style: solid;
+-fx-border-color: #353A56;
+}
+
+/* General customizations */
+.custom-background {
+    -fx-background-color: #EAEEF4;
+}
+
+/* Customize the radio button to look like a normal button */
+.custom-radio-button {
+    -fx-background-color: #1d522a;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 50px;
+    -fx-alignment: CENTER;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-cursor: pointer;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+    -fx-background-insets: 0;
+    /* Center the text vertically and horizontally */
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+/* Custom background for selected radio button */
+.custom-radio-button:selected {
+    -fx-background-color: #43a047;
+    -fx-background-radius: 15px;
+    -fx-text-fill: white;
+}
+
+/* Style for the default radio button indicator */
+.custom-radio-button > .radio {
+    -fx-background-color: #EAEEF4;
+    -fx-background-radius: 50%;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-opacity: 1;
+}
+
+/* Custom selected indicator */
+.custom-radio-button:selected > .radio {
+    -fx-background-color: #43a047;
+    -fx-background-radius: 50%;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-opacity: 0;
+}
+
+/* Hover effect */
+.custom-radio-button:hover {
+    -fx-background-color: #388e3c;
+}
+
+.custom-radio-button:focused {
+    -fx-background-color: #43a047; /* Background color when focused */
+    -fx-border-color: transparent; /* Remove focus border */
+}
+
+

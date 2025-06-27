@@ -1,0 +1,21 @@
+Grocery Lists:
+Dishes:
+Ingredients:
+- Rice, Category: Pasta
+- Chicken, Category: Meat
+- Beef, Category: Meat
+- Pork, Category: Meat
+- Shells, Category: Pasta
+- Noodles, Category: Pasta
+- Orzo, Category: Pasta
+- Sliced Bread, Category: Bread
+- Sub Rolls, Category: Bread
+- Tortilla, Category: Bread
+- Milk, Category: Dairy
+- Sour Cream, Category: Dairy
+- Butter, Category: Dairy
+- Cheese, Category: Dairy
+- Lettuce, Category: Produce
+- Tomato, Category: Produce
+- Lemon, Category: Produce
+- Potato, Category: Produce

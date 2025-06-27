@@ -1,0 +1,192 @@
+/* styles.css */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+
+.custom-background {
+    -fx-background-color: linear-gradient(to bottom, #a5d6a7, #388e3c);
+}
+
+.vbox {
+    -fx-background-color: #e8f5e9; /* Light green background */
+}
+
+.grid-pane {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c8e6c9; /* Light green border */
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+}
+
+.button {
+    -fx-background-color: #43a047; /* Green button */
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+}
+
+.button:hover {
+    -fx-background-color: #2e7d32; /* Darker green on hover */
+}
+
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c8e6c9; /* Light green border */
+    -fx-border-width: 1px;
+}
+
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c8e6c9; /* Light green border */
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+
+.label {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+/* Style the title text of the TitledPane */
+.titled-pane > .title {
+    -fx-background-color: #388e3c;
+    -fx-background-radius: 10px 10px 0 0;
+    -fx-padding: 10px;
+    -fx-border-radius: 10px 10px 0 0;
+}
+
+.titled-pane > .title > .text {
+    -fx-fill: #e8f5e9; /* Light green text color */
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+}
+
+/* Style the background and border of the TitledPane */
+.titled-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 4;
+}
+
+/* Style the content of the TitledPane */
+.titled-pane > .content {
+    -fx-background-color: #c8e6c9;
+    -fx-padding: 0;
+    -fx-background-radius: 0 0 10px 10px;
+}
+
+/* Customize the Accordion as well */
+.accordion {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+/* Change the background of all ListViews */
+.list-view {
+    -fx-background-color: #c8e6c9;  /* Light green background */
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.list-cell {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #33691e;
+    -fx-background-color: transparent;
+}
+
+/* Preserve selection highlighting */
+.list-cell:focused, .list-cell:selected {
+    -fx-background-color: #2e7d32;
+    -fx-text-fill: white;
+}
+
+/* Style for the horizontal scrollbar */
+.list-view .scroll-bar:horizontal {
+    -fx-pref-height: 8px;
+}
+
+.list-view .scroll-bar:horizontal .track {
+    -fx-background-color: #c8e6c9; /* Light green color */
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+.list-view .scroll-bar:horizontal .thumb {
+    -fx-background-color: #388e3c; /* Green scrollbar thumb */
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+/* Style for the vertical scrollbar */
+.list-view .scroll-bar:vertical {
+    -fx-pref-width: 8px;
+}
+
+.list-view .scroll-bar:vertical .track {
+    -fx-background-color: linear-gradient(#a5d6a7, #66bb6a); /* Green gradient */
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #388e3c; /* Green scrollbar thumb */
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+/* Style for the scrollbar increment/decrement buttons */
+.list-view .scroll-bar .increment-button,
+.list-view .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-padding: 0;
+}
+
+/* Style for the ScrollPane */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+/* Style for the horizontal scrollbar */
+.scroll-pane .scroll-bar:horizontal {
+    -fx-pref-height: 8px; /
+}
+
+.scroll-pane .scroll-bar:horizontal .track {
+    -fx-background-color: #c8e6c9; /* Light green color */
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+.scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: #388e3c; /* Green scrollbar thumb */
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+/* Style for the vertical scrollbar */
+.scroll-pane .scroll-bar:vertical {
+    -fx-pref-width: 8px;
+}
+
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: linear-gradient(#a5d6a7, #66bb6a); /* Green gradient */
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #388e3c; /* Green scrollbar thumb */
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+/* Style for the scrollbar increment/decrement buttons */
+.scroll-pane .scroll-bar .increment-button,
+.scroll-pane .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-padding: 0;
+}
+
+.dish-card {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+}
